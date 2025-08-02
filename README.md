@@ -11,24 +11,27 @@ Estimate the Fourier series coefficients of an unknown function using a genetic 
 ![GeneticPlot](GeneticPlot.png)
 
 
-## 🎮 Part 2: Implementing Pentago with Minimax Algorithm
+## 🎮 Part 2: Implementing Pentago with the Minimax Algorithm
 
 **Objective:**  
-Build a playable version of the Pentago game and implement an AI opponent using the Minimax algorithm.
+Develop a playable Pentago game with an AI opponent powered by the Minimax algorithm.
 
-**Game Description**
-Pentago is a two-player abstract strategy game where players take turns placing marbles on a 6×6 board divided into four 3×3 quadrants.
+**Game Description:**  
+Pentago is a two-player abstract strategy game played on a 6×6 board divided into four 3×3 quadrants.  
+Players take turns placing a marble and then rotating one of the quadrants 90° in either direction.  
+The goal is to align five of your marbles in a row—horizontally, vertically, or diagonally.
 
-After placing a marble, the player rotates one quadrant 90° in either direction.
+**Minimax Algorithm:**  
+- Uses depth-limited search for AI decision-making  
+- Integrates Alpha-Beta pruning to improve efficiency  
+- AI difficulty can be adjusted by changing the `depth` parameter  
+  *(Note: Higher depth = stronger AI but slower computation)*
 
-The goal is to get five of your marbles in a row(horizontally, vertically, or diagonally).
+**Results:**  
+- Demonstrated the effectiveness of Alpha-Beta pruning through simulations  
+- Created a fully playable Pentago game featuring a human vs. AI opponent  
+- Preview shown below:
 
-**Minimax Algorithm**
-Depth-limited search for agent decision-making.
-Alpha-beta pruning to optimize computational efficiency.
+![PentagoAI](PentagoAI.gif)
 
-**Results**
-Compared the effectiveness of alpha-beta pruning at depth 3
-
-
----
+Red: Human Agent  &   Blue: AI
